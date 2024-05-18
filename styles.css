@@ -15,11 +15,11 @@
     --text-color: white;
     --main-color: #F8CF40;
 }
+
 html {
     font-size: 60%; 
     overflow-x: hidden;
 }
-
 
 body {
     background-image: url('assets/Background-Home.jpg');
@@ -30,8 +30,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0; /* Make sure header spans full width */
-    padding: 4rem 12% 4rem;
+    right: 0;
+    padding: 4rem 12%;
     background: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -47,29 +47,33 @@ body {
     cursor: pointer;
     transition: 0.3s ease;
     position: absolute;
-    margin-top: 5px; /* Adjust this value to position your logo */
-    left: 1rem; /* Adjust this value to position your logo */
+    margin-top: 5px;
+    left: 1rem;
 }
-button{
+
+button {
     height: 40px;
     width: 325px;
-    text-align: center; margin: 20px 10px;
+    text-align: center;
+    margin: 20px 10px;
     border-radius: 25px;
     overflow: hidden;
     font-weight: bold;
-    background:transparent;
+    background: transparent;
     border: 2px solid #F8CF40;
     color: #F8CF40;
 }
-button:hover{
+
+button:hover {
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 0 0 20px 0 violet;
 }
+
 .logo img {
-    height: 300px; /* Adjust the height of your logo */
-    width: 300px; /* Maintain aspect ratio */
-    display: block; /* Remove any extra spacing */
+    height: 300px;
+    width: 300px;
+    display: block;
 }
 
 .logo:hover {
@@ -84,15 +88,14 @@ button:hover{
     display: flex;
     align-items: center;
     position: absolute;
-    top: 3rem; 
-    /* Adjust this value to position the navbar */
-    right: 10rem; /* Adjust this value to position the navbar */
+    top: 3rem;
+    right: 10rem;
 }
 
 .navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
-    margin-left: 2rem; /* Adjust the spacing between links */
+    margin-left: 2rem;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -102,9 +105,11 @@ button:hover{
     color: #F8CF40;
     border-bottom: 3px solid #F8CF40;
 }
-.home-content em{
-    color:#F8CF40;
+
+.home-content em {
+    color: #F8CF40;
 }
+
 #menu-icon {
     font-size: 3.6rem;
     color: var(--main-color);
@@ -113,14 +118,14 @@ button:hover{
 
 section {
     min-height: 100vh;
-    padding: 10rem 12% 10rem;
+    padding: 10rem 12%;
 }
 
 .home {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15rem;   
+    gap: 15rem;
 }
 
 .home-content {
@@ -131,8 +136,6 @@ section {
     justify-content: center;
     margin-top: 3rem;
 }
-
-
 
 .logo span {
     color: var(--main-color);
@@ -157,8 +160,61 @@ section {
 
 .home-img img {
     width: 32vw;
-    max-width: 400px; /* Set a maximum width for the image */
+    max-width: 400px;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        top: 8rem;
+        right: 2rem;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+        font-size: 1.5rem;
+    }
+
+    .home-content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        top: 9rem;
+        right: 1rem;
+    }
+
+    .navbar a {
+        font-size: 1.2rem;
+    }
+
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+
+    button {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        height: 200px;
+        width: 200px;
+    }
 }

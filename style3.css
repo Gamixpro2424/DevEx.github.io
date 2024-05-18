@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #F8CF40;
+}
+
+body {
+    background-image: url('assets/Background-Home.jpg');
+    color: var(--text-color);
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.card {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.card-header {
+    background: linear-gradient(to right, #ffd700, #fff);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.card-header:hover {
+    background: linear-gradient(to right, #fff, #ffd700);
+}
+
+.card-content {
+    display: none;
+    padding: 10px;
+}
+html {
+    font-size: 60%; 
+    overflow-x: hidden;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Make sure header spans full width */
+    padding: 4rem 12% 4rem;
+    background: rgba(0,0,0,0.3);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    margin-top: 5px; /* Adjust this value to position your logo */
+    left: 1rem; /* Adjust this value to position your logo */
+}
+
+.logo img {
+    height: 300px; /* Adjust the height of your logo */
+    width: 300px; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo span {
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 3rem; 
+    /* Adjust this value to position the navbar */
+    right: 10rem; /* Adjust this value to position the navbar */
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 2rem; /* Adjust the spacing between links */
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #F8CF40;
+    border-bottom: 3px solid #F8CF40;
+}

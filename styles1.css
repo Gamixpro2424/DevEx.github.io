@@ -1,0 +1,394 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+html{
+    font-size: 60%; 
+    overflow-x: hidden;
+}
+
+
+body {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the body */
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/Background-Home.jpg');
+    background-size: cover;
+    background-position: center;/* Adjust the opacity value as needed */
+    z-index: -1; /* Ensure the pseudo-element is behind the body content */
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:5;
+}   
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor:pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    margin-top: 5px; /* Adjust this value to position your logo */
+    left: 1rem; 
+
+}
+.logo img{
+    height: 300px; /* Adjust the height of your logo */
+    width: 300px; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing */
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    text-shadow : 0 0 25px var(--main-color);
+
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 3rem; 
+    /* Adjust this value to position the navbar */
+    right: 10rem; /* Adjust this value to position the navbar */
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 2rem; /* Adjust the spacing between links */
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover, .navbar a.active{
+    color: #F8CF40;
+    border-bottom: 3px solid #F8CF40;
+
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display:none;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;   
+}
+.home-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+}
+.text-size{
+    font-size: 18px;
+}
+.social-icons i {
+    font-size: 4rem; /* Adjust the size as needed */
+    transition: transform 0.3s ease-in-out;
+}
+.social-icons i:hover{
+    transform: scale(1.1    );
+
+}
+
+
+.home1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;   
+}
+
+.home-content1{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+}
+.text-size1{
+    font-size: 18px;
+}
+.social-icons1 i {
+    font-size: 4rem; /* Adjust the size as needed */
+    transition: transform 0.3s ease-in-out;
+}
+.social-icons1 i:hover{
+    transform: scale(1.1);
+
+}
+
+
+
+.home2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;   
+}
+
+.home-content2{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+}
+.text-size2{
+    font-size: 18px;
+}
+.social-icons2 i {
+    font-size: 4rem; /* Adjust the size as needed */
+    transition: transform 0.3s ease-in-out;
+}
+.social-icons2 i:hover{
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+
+.home3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;   
+}
+
+.home-content3{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+}
+.text-size3{
+    font-size: 18px;
+}
+.social-icons3 i {
+    font-size: 4rem; /* Adjust the size as needed */
+    transition: transform 0.3s ease-in-out;
+}
+.social-icons3 i:hover{
+    transform: scale(1.1);
+
+}
+
+
+.home4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;   
+}
+
+.home-content4{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+}
+.text-size4{
+    font-size: 18px;
+}
+.social-icons4 i {
+    font-size: 4rem; /* Adjust the size as needed */
+    transition: transform 0.3s ease-in-out;
+}
+.social-icons4 i:hover{
+    transform: scale(1.1);
+
+}
+
+
+
+span{
+    color:var(--main-color);
+}
+.logo span{
+    color: var(--main-color);
+}
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 100px;
+}
+h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top:1.5rem;
+    line-height:1;
+}
+
+.home-img{
+    border-radius:50%;
+    order:-1;
+}
+
+
+.home-img img{
+    position: relative;
+    height:240px;
+    width: 240px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--main-color);
+
+}
+.home-img img {
+    transition: transform 1s ease-in-out;
+}
+
+.home-img img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.home-img1{
+    border-radius:50%;
+}
+
+
+.home-img1 img{
+    position: relative;
+    height:240px;
+    width: 240px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--main-color);
+
+}
+.home-img1 img {
+    transition: transform 1s ease-in-out;
+}
+
+.home-img1 img:hover {
+    transform: scale(1.1);
+}
+
+
+.home-img2{
+    border-radius:50%;
+    order:-1;
+}
+
+
+.home-img2 img{
+    position: relative;
+    height:240px;
+    width: 240px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--main-color);
+
+}
+.home-img2 img {
+    transition: transform 1s ease-in-out;
+}
+
+.home-img2 img:hover {
+    transform: scale(1.1);
+}
+
+
+.home-img3{
+    border-radius:50%;
+}
+
+
+.home-img3 img{
+    position: relative;
+    height:240px;
+    width: 240px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--main-color);
+
+}
+.home-img3 img {
+    transition: transform 1s ease-in-out;
+}
+
+.home-img3 img:hover {
+    transform: scale(1.1);
+}
+
+
+.home-img4{
+    border-radius:50%;
+    order:-1;
+}
+
+
+.home-img4 img{
+    position: relative;
+    height:240px;
+    width: 240px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--main-color);
+
+}
+.home-img4 img {
+    transition: transform 1s ease-in-out;
+}
+
+.home-img4 img:hover {
+    transform: scale(1.1);
+}
+
+
